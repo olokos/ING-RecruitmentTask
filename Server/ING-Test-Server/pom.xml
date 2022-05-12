@@ -12,7 +12,7 @@
     <artifactId>ING-Test-Server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ING-Test-Server</name>
-    <description>ING-Test-Server</description>
+    <description>Made by olokos for purposes of recruitment to ING</description>
     <properties>
         <java.version>17</java.version>
     </properties>
