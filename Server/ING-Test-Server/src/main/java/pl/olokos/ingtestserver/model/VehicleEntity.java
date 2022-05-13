@@ -1,4 +1,4 @@
-package model;
+package pl.olokos.ingtestserver.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

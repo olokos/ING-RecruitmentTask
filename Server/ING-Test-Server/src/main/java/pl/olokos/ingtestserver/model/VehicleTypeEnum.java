@@ -1,4 +1,4 @@
-package model;
+package pl.olokos.ingtestserver.model;
 
 public enum VehicleTypeEnum {
     CAR,
@@ -6,5 +6,6 @@ public enum VehicleTypeEnum {
     MOTORCYCLE,
     VAN,
     LARGE,
-    OTHER
+    OTHER,
+    TRACK
 }

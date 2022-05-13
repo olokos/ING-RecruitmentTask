@@ -1,10 +1,10 @@
-package services;
+package pl.olokos.ingtestserver.services;
 
 import lombok.RequiredArgsConstructor;
-import model.VehicleEntity;
+import pl.olokos.ingtestserver.model.VehicleEntity;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
-import repository.VehicleRepository;
+import pl.olokos.ingtestserver.repository.VehicleRepository;
 
 import java.util.ArrayList;
 import java.util.List;
