@@ -1,0 +1,8 @@
+Swagger:
+http://192.168.1.110:8080/swagger-ui.html
+
+H2Console: (jdbc:h2:mem:ING-Test) - JDBC URL
+http://192.168.1.110:8080/h2-console
+
+Get all vehicles api call:
+http://192.168.1.110:8080/vehicles
