@@ -108,15 +108,16 @@
                 <version>1.4</version>
                 <executions>
                     <execution>
+                        <id>integration-test</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <apiDocsUrl>http://localhost:8080/v3/api-docs</apiDocsUrl>
+                    <apiDocsUrl>http://localhost:8080/v3/api-docs.yaml</apiDocsUrl>
                     <outputDir>${project.basedir}/src/main/resources</outputDir>
-                    <outputFileName>openapi.json</outputFileName>
+                    <outputFileName>openapi.yaml</outputFileName>
                 </configuration>
             </plugin>
         </plugins>

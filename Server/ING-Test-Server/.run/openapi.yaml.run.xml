@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ING-Client54" type="SwaggerCodegen">
+    <option name="activeConfigurationType" value="FILE" />
+    <option name="configurationPath" value="" />
+    <option name="customJreEnabled" value="false" />
+    <option name="customTemplatesPath" value="" />
+    <option name="enableDebugLogging" value="false" />
+    <option name="generateToPath" value="C:\Users\olokos\Documents\Projekty\ING-RecruitmentTask\Server\ING-Test-Server\gen" />
+    <option name="generationParameters">
+      <list>
+        <CliArgumentViewModel>
+          <option name="name" value="" />
+          <option name="value" />
+        </CliArgumentViewModel>
+      </list>
+    </option>
+    <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+    <option name="jdkPath" value="Default" />
+    <option name="language" value="java" />
+    <option name="specificationPath" value="C:\Users\olokos\Documents\Projekty\ING-RecruitmentTask\Server\ING-Test-Server\src\main\resources\openapi.yaml" />
+    <method v="2" />
+  </configuration>
+</component>
