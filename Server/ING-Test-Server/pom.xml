@@ -114,9 +114,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <apiDocsUrl>http://localhost:8080/v3/api-docs.yaml</apiDocsUrl>
+                    <apiDocsUrl>http://localhost:8080/v3/api-docs</apiDocsUrl>
                     <outputDir>${project.basedir}/src/main/resources</outputDir>
-                    <outputFileName>openapi.yaml</outputFileName>
+                    <outputFileName>openapi.json</outputFileName>
                 </configuration>
             </plugin>
         </plugins>
