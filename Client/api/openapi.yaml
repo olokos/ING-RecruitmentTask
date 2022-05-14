@@ -1,0 +1,465 @@
+openapi: 3.0.1
+info:
+  contact:
+    email: olokos@wp.pl
+    name: olokos
+  description: Made by olokos for purposes of recruitment to ING
+  license:
+    name: GNU GPLv3
+    url: https://github.com/olokos/ING-RecruitmentTask/blob/main/LICENSE
+  termsOfService: http://swagger.io/terms/
+  title: Spring Boot Rest Server API
+  version: 0.0.1-SNAPSHOT
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+paths:
+  /profile:
+    get:
+      operationId: listAllFormsOfMetadata_1
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/RepresentationModelObject'
+          description: OK
+      tags:
+      - profile-controller
+      x-accepts: application/hal+json
+  /profile/vehicleEntities:
+    get:
+      operationId: descriptor_1_1_1
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+            application/alps+json:
+              schema:
+                type: string
+            application/schema+json:
+              schema:
+                $ref: '#/components/schemas/JsonSchema'
+          description: OK
+      tags:
+      - profile-controller
+      x-accepts: '*/*,application/alps+json,application/schema+json'
+  /vehicleEntities:
+    get:
+      description: get-vehicleentity
+      operationId: getCollectionResource-vehicleentity-get_1
+      parameters:
+      - description: Zero-based page index (0..N)
+        explode: true
+        in: query
+        name: page
+        required: false
+        schema:
+          default: 0
+          minimum: 0
+          type: integer
+        style: form
+      - description: The size of the page to be returned
+        explode: true
+        in: query
+        name: size
+        required: false
+        schema:
+          default: 20
+          minimum: 1
+          type: integer
+        style: form
+      - description: 'Sorting criteria in the format: property,(asc|desc). Default
+          sort order is ascending. Multiple sort criteria are supported.'
+        explode: true
+        in: query
+        name: sort
+        required: false
+        schema:
+          items:
+            type: string
+          type: array
+        style: form
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/PagedModelEntityModelVehicleEntity'
+            application/x-spring-data-compact+json:
+              schema:
+                $ref: '#/components/schemas/PagedModelEntityModelVehicleEntity'
+            text/uri-list:
+              schema:
+                type: string
+          description: OK
+      tags:
+      - vehicle-entity-entity-controller
+      x-accepts: application/hal+json,application/x-spring-data-compact+json,text/uri-list
+    post:
+      description: create-vehicleentity
+      operationId: postCollectionResource-vehicleentity-post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VehicleEntityRequestBody'
+        required: true
+      responses:
+        "201":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/EntityModelVehicleEntity'
+          description: Created
+      tags:
+      - vehicle-entity-entity-controller
+      x-contentType: application/json
+      x-accepts: application/hal+json
+  /vehicleEntities/search/findByNumberPlateContaining:
+    get:
+      operationId: executeSearch-vehicleentity-get
+      parameters:
+      - explode: true
+        in: query
+        name: numberPlate
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/CollectionModelEntityModelVehicleEntity'
+          description: OK
+        "404":
+          description: Not Found
+      tags:
+      - vehicle-entity-search-controller
+      x-accepts: application/hal+json
+  /vehicleEntities/{id}:
+    delete:
+      description: delete-vehicleentity
+      operationId: deleteItemResource-vehicleentity-delete
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "204":
+          description: No Content
+        "404":
+          description: Not Found
+      tags:
+      - vehicle-entity-entity-controller
+      x-accepts: application/json
+    get:
+      description: get-vehicleentity
+      operationId: getItemResource-vehicleentity-get
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/EntityModelVehicleEntity'
+          description: OK
+        "404":
+          description: Not Found
+      tags:
+      - vehicle-entity-entity-controller
+      x-accepts: application/hal+json
+    patch:
+      description: patch-vehicleentity
+      operationId: patchItemResource-vehicleentity-patch
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VehicleEntityRequestBody'
+        required: true
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/EntityModelVehicleEntity'
+          description: OK
+        "204":
+          description: No Content
+      tags:
+      - vehicle-entity-entity-controller
+      x-contentType: application/json
+      x-accepts: application/hal+json
+    put:
+      description: update-vehicleentity
+      operationId: putItemResource-vehicleentity-put
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VehicleEntityRequestBody'
+        required: true
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/EntityModelVehicleEntity'
+          description: OK
+        "201":
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/EntityModelVehicleEntity'
+          description: Created
+        "204":
+          description: No Content
+      tags:
+      - vehicle-entity-entity-controller
+      x-contentType: application/json
+      x-accepts: application/hal+json
+  /vehicles:
+    get:
+      operationId: GetVehicles
+      responses:
+        "200":
+          content:
+            application/hal+json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/VehicleEntity'
+                type: array
+          description: OK
+      tags:
+      - vehicles-controller
+      x-accepts: application/hal+json
+components:
+  schemas:
+    AbstractJsonSchemaPropertyObject:
+      properties:
+        title:
+          type: string
+        readOnly:
+          type: boolean
+      type: object
+    Item:
+      properties:
+        type:
+          type: string
+        properties:
+          additionalProperties:
+            $ref: '#/components/schemas/AbstractJsonSchemaPropertyObject'
+          type: object
+        requiredProperties:
+          items:
+            type: string
+          type: array
+      type: object
+    JsonSchema:
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        properties:
+          additionalProperties:
+            $ref: '#/components/schemas/AbstractJsonSchemaPropertyObject'
+          type: object
+        requiredProperties:
+          items:
+            type: string
+          type: array
+        definitions:
+          additionalProperties:
+            $ref: '#/components/schemas/Item'
+          type: object
+        type:
+          type: string
+        $schema:
+          type: string
+      type: object
+    Links:
+      additionalProperties:
+        $ref: '#/components/schemas/Link'
+      type: object
+    RepresentationModelObject:
+      properties:
+        _links:
+          additionalProperties:
+            $ref: '#/components/schemas/Link'
+          type: object
+      type: object
+    EntityModelVehicleEntity:
+      properties:
+        make:
+          type: string
+        model:
+          type: string
+        numberPlate:
+          type: string
+        purchasedFor:
+          type: number
+        vehicleTypeEnum:
+          enum:
+          - CAR
+          - SCOOTER
+          - MOTORCYCLE
+          - VAN
+          - LARGE
+          - OTHER
+          - TRACK
+          type: string
+        _links:
+          additionalProperties:
+            $ref: '#/components/schemas/Link'
+          type: object
+      type: object
+    PageMetadata:
+      properties:
+        size:
+          format: int64
+          type: integer
+        totalElements:
+          format: int64
+          type: integer
+        totalPages:
+          format: int64
+          type: integer
+        number:
+          format: int64
+          type: integer
+      type: object
+    PagedModelEntityModelVehicleEntity:
+      properties:
+        _embedded:
+          $ref: '#/components/schemas/PagedModelEntityModelVehicleEntity__embedded'
+        _links:
+          additionalProperties:
+            $ref: '#/components/schemas/Link'
+          type: object
+        page:
+          $ref: '#/components/schemas/PageMetadata'
+      type: object
+    VehicleEntity:
+      properties:
+        vehicleId:
+          format: int64
+          type: integer
+        make:
+          type: string
+        model:
+          type: string
+        numberPlate:
+          type: string
+        purchasedFor:
+          type: number
+        vehicleTypeEnum:
+          enum:
+          - CAR
+          - SCOOTER
+          - MOTORCYCLE
+          - VAN
+          - LARGE
+          - OTHER
+          - TRACK
+          type: string
+      type: object
+    CollectionModelEntityModelVehicleEntity:
+      properties:
+        _embedded:
+          $ref: '#/components/schemas/PagedModelEntityModelVehicleEntity__embedded'
+        _links:
+          additionalProperties:
+            $ref: '#/components/schemas/Link'
+          type: object
+      type: object
+    VehicleEntityRequestBody:
+      example:
+        model: model
+        vehicleId: 0
+        vehicleTypeEnum: CAR
+        make: make
+        purchasedFor: 6.027456183070403
+        numberPlate: numberPlate
+      properties:
+        vehicleId:
+          format: int64
+          type: integer
+        make:
+          type: string
+        model:
+          type: string
+        numberPlate:
+          type: string
+        purchasedFor:
+          type: number
+        vehicleTypeEnum:
+          enum:
+          - CAR
+          - SCOOTER
+          - MOTORCYCLE
+          - VAN
+          - LARGE
+          - OTHER
+          - TRACK
+          type: string
+      type: object
+    Link:
+      properties:
+        href:
+          type: string
+        hreflang:
+          type: string
+        title:
+          type: string
+        type:
+          type: string
+        deprecation:
+          type: string
+        profile:
+          type: string
+        name:
+          type: string
+        templated:
+          type: boolean
+      type: object
+    PagedModelEntityModelVehicleEntity__embedded:
+      properties:
+        vehicleEntities:
+          items:
+            $ref: '#/components/schemas/EntityModelVehicleEntity'
+          type: array
+      type: object
+
