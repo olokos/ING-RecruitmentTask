@@ -1,9 +1,9 @@
 package pl.olokos.ingtestserver.services;
 
 import lombok.RequiredArgsConstructor;
-import pl.olokos.ingtestserver.model.VehicleEntity;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
+import pl.olokos.ingtestserver.model.VehicleEntity;
 import pl.olokos.ingtestserver.repository.VehicleRepository;
 
 import java.util.ArrayList;
