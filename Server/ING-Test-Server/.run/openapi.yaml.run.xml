@@ -5,7 +5,7 @@
     <option name="customJreEnabled" value="false" />
     <option name="customTemplatesPath" value="" />
     <option name="enableDebugLogging" value="false" />
-    <option name="generateToPath" value="C:\Users\olokos\Documents\Projekty\ING-RecruitmentTask\Server\ING-Test-Server\gen" />
+    <option name="generateToPath" value="C:\Users\olokos\Documents\Projekty\ING-RecruitmentTask\Client" />
     <option name="generationParameters">
       <list>
         <CliArgumentViewModel>
