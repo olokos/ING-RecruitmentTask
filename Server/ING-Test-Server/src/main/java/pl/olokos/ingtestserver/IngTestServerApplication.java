@@ -1,5 +1,6 @@
 package pl.olokos.ingtestserver;
 
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableAdminServer
 public class IngTestServerApplication {
 
     public static void main(String[] args) {
