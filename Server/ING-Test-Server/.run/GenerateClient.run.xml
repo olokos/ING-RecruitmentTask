@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Generate Client" type="SwaggerCodegen">
-    <option name="activeConfigurationType" value="FILE" />
+    <option name="activeConfigurationType" value="CLI_PARAMETERS" />
     <option name="configurationPath" value="" />
     <option name="customJreEnabled" value="false" />
     <option name="customTemplatesPath" value="" />
@@ -9,8 +9,8 @@
     <option name="generationParameters">
       <list>
         <CliArgumentViewModel>
-          <option name="name" value="" />
-          <option name="value" />
+          <option name="name" value="hideGenerationTimestamp" />
+          <option name="value" value="true" />
         </CliArgumentViewModel>
       </list>
     </option>
