@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ING-Client54" type="SwaggerCodegen">
+  <configuration default="false" name="Generate Client" type="SwaggerCodegen">
     <option name="activeConfigurationType" value="FILE" />
     <option name="configurationPath" value="" />
     <option name="customJreEnabled" value="false" />
