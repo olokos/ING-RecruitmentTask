@@ -16,7 +16,7 @@
 
     <licenses>
         <license>
-            <name>Unlicense</name>
+            <name>GNU GPLv3</name>
             <url>https://github.com/olokos/ING-RecruitmentTask/blob/main/LICENSE</url>
             <distribution>repo</distribution>
         </license>
@@ -24,10 +24,10 @@
 
     <developers>
         <developer>
-            <name>OpenAPI-Generator Contributors</name>
-            <email>team@openapitools.org</email>
-            <organization>OpenAPITools.org</organization>
-            <organizationUrl>https://openapitools.org</organizationUrl>
+            <name>olokos and OpenAPI-Generator Contributors</name>
+            <email>olokos@wp.pl</email>
+            <organization>olokos - Private</organization>
+            <organizationUrl>https://kiepownica.pl</organizationUrl>
         </developer>
     </developers>
 
@@ -177,7 +177,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Use spotless plugin to automatically format code, remove unused import, etc
+            <!-- Use spotless plugin to automatically format code, remove unused import, etc.
                  To apply changes directly to the file, run `mvn spotless:apply`
                  Ref: https://github.com/diffplug/spotless/tree/main/plugin-maven
             -->
@@ -318,13 +318,13 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <gson-fire-version>1.8.5</gson-fire-version>
-        <swagger-core-version>1.6.3</swagger-core-version>
-        <okhttp-version>4.9.2</okhttp-version>
-        <gson-version>2.8.8</gson-version>
+        <swagger-core-version>1.6.6</swagger-core-version>
+        <okhttp-version>4.9.3</okhttp-version>
+        <gson-version>2.9.0</gson-version>
         <commons-lang3-version>3.12.0</commons-lang3-version>
         <jackson-databind-nullable-version>0.2.2</jackson-databind-nullable-version>
-        <threetenbp-version>1.5.0</threetenbp-version>
-        <jakarta-annotation-version>1.3.5</jakarta-annotation-version>
+        <threetenbp-version>1.6.0</threetenbp-version>
+        <jakarta-annotation-version>2.1.0</jakarta-annotation-version>
         <junit-version>4.13.2</junit-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spotless.version>2.17.3</spotless.version>
@@ -337,6 +337,6 @@
         <maven-source-plugin.version>3.2.0</maven-source-plugin.version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <jsr305.version>3.0.2</jsr305.version>
-        <mockito-core.version>3.12.4</mockito-core.version>
+        <mockito-core.version>4.5.1</mockito-core.version>
     </properties>
 </project>
