@@ -3,7 +3,8 @@
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout
-                    pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable" />
+                    pattern="%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{${sys:PID}}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx"/>
+
         </Console>
 
         <RollingFile name="RollingFile"
@@ -15,10 +16,10 @@
             <Policies>
                 <!-- rollover on startup, daily and when the file reaches
                     10 MegaBytes -->
-                <OnStartupTriggeringPolicy />
+                <OnStartupTriggeringPolicy/>
                 <SizeBasedTriggeringPolicy
-                        size="10 MB" />
-                <TimeBasedTriggeringPolicy />
+                        size="10 MB"/>
+                <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
     </Appenders>
@@ -26,12 +27,12 @@
     <Loggers>
         <!-- LOG everything at INFO level -->
         <Root level="info">
-            <AppenderRef ref="Console" />
-            <AppenderRef ref="RollingFile" />
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
         </Root>
 
         <!-- LOG "pl.olokos.ingtestserver*" at TRACE level -->
-        <Logger name="pl.olokos.ingtestserver*" level="trace"> </Logger>
+        <Logger name="pl.olokos.ingtestserver*" level="trace"></Logger>
     </Loggers>
 
 </Configuration>
