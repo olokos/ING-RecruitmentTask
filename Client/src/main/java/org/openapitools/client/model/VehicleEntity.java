@@ -111,6 +111,8 @@ public class VehicleEntity {
   @SerializedName(SERIALIZED_NAME_VEHICLE_TYPE_ENUM)
   private VehicleTypeEnumEnum vehicleTypeEnum;
 
+  public VehicleEntity() { 
+  }
 
   public VehicleEntity vehicleId(Long vehicleId) {
     
@@ -271,7 +273,6 @@ public class VehicleEntity {
   public int hashCode() {
     return Objects.hash(vehicleId, make, model, numberPlate, purchasedFor, vehicleTypeEnum);
   }
-
 
   @Override
   public String toString() {

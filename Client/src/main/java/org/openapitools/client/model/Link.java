@@ -61,6 +61,8 @@ public class Link {
   @SerializedName(SERIALIZED_NAME_TEMPLATED)
   private Boolean templated;
 
+  public Link() { 
+  }
 
   public Link href(String href) {
     
@@ -269,7 +271,6 @@ public class Link {
   public int hashCode() {
     return Objects.hash(href, hreflang, title, type, deprecation, profile, name, templated);
   }
-
 
   @Override
   public String toString() {

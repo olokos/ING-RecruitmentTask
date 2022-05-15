@@ -37,6 +37,8 @@ public class RepresentationModelObject {
   @SerializedName(SERIALIZED_NAME_LINKS)
   private Map<String, Link> links = null;
 
+  public RepresentationModelObject() { 
+  }
 
   public RepresentationModelObject links(Map<String, Link> links) {
     
@@ -85,7 +87,6 @@ public class RepresentationModelObject {
   public int hashCode() {
     return Objects.hash(links);
   }
-
 
   @Override
   public String toString() {

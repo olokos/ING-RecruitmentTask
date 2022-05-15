@@ -115,6 +115,8 @@ public class EntityModelVehicleEntity {
   @SerializedName(SERIALIZED_NAME_LINKS)
   private Map<String, Link> links = null;
 
+  public EntityModelVehicleEntity() { 
+  }
 
   public EntityModelVehicleEntity make(String make) {
     
@@ -283,7 +285,6 @@ public class EntityModelVehicleEntity {
   public int hashCode() {
     return Objects.hash(make, model, numberPlate, purchasedFor, vehicleTypeEnum, links);
   }
-
 
   @Override
   public String toString() {

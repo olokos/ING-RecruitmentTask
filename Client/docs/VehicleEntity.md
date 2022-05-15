@@ -2,6 +2,7 @@
 
 # VehicleEntity
 
+
 ## Properties
 
 Name | Type | Description | Notes

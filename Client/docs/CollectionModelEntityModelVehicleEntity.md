@@ -2,6 +2,7 @@
 
 # CollectionModelEntityModelVehicleEntity
 
+
 ## Properties
 
 Name | Type | Description | Notes

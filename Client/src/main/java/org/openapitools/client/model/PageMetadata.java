@@ -45,6 +45,8 @@ public class PageMetadata {
   @SerializedName(SERIALIZED_NAME_NUMBER)
   private Long number;
 
+  public PageMetadata() { 
+  }
 
   public PageMetadata size(Long size) {
     
@@ -157,7 +159,6 @@ public class PageMetadata {
   public int hashCode() {
     return Objects.hash(size, totalElements, totalPages, number);
   }
-
 
   @Override
   public String toString() {

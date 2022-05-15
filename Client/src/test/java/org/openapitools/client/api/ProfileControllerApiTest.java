@@ -1,6 +1,6 @@
 /*
  * Spring Boot Rest Server API
- * Made by Aleksander Kos for purposes of recruitment to ING
+ * Made by olokos for purposes of recruitment to ING
  *
  * The version of the OpenAPI document: 0.0.1-SNAPSHOT
  * Contact: olokos@wp.pl
@@ -14,6 +14,7 @@
 package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
+import org.openapitools.client.model.JsonSchema;
 import org.openapitools.client.model.RepresentationModelObject;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -42,8 +43,7 @@ public class ProfileControllerApiTest {
      */
     @Test
     public void descriptor111Test() throws ApiException {
-        String response = api.descriptor111();
-
+                String response = api.descriptor111();
         // TODO: test validations
     }
     
@@ -57,8 +57,7 @@ public class ProfileControllerApiTest {
      */
     @Test
     public void listAllFormsOfMetadata1Test() throws ApiException {
-        RepresentationModelObject response = api.listAllFormsOfMetadata1();
-
+                RepresentationModelObject response = api.listAllFormsOfMetadata1();
         // TODO: test validations
     }
     

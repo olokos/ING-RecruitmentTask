@@ -1,6 +1,6 @@
 /*
  * Spring Boot Rest Server API
- * Made by Aleksander Kos for purposes of recruitment to ING
+ * Made by olokos for purposes of recruitment to ING
  *
  * The version of the OpenAPI document: 0.0.1-SNAPSHOT
  * Contact: olokos@wp.pl
@@ -45,8 +45,7 @@ public class VehicleEntityEntityControllerApiTest {
     @Test
     public void deleteItemResourceVehicleentityDeleteTest() throws ApiException {
         String id = null;
-        api.deleteItemResourceVehicleentityDelete(id);
-
+                api.deleteItemResourceVehicleentityDelete(id);
         // TODO: test validations
     }
     
@@ -63,8 +62,7 @@ public class VehicleEntityEntityControllerApiTest {
         Integer page = null;
         Integer size = null;
         List<String> sort = null;
-        PagedModelEntityModelVehicleEntity response = api.getCollectionResourceVehicleentityGet1(page, size, sort);
-
+                PagedModelEntityModelVehicleEntity response = api.getCollectionResourceVehicleentityGet1(page, size, sort);
         // TODO: test validations
     }
     
@@ -79,8 +77,7 @@ public class VehicleEntityEntityControllerApiTest {
     @Test
     public void getItemResourceVehicleentityGetTest() throws ApiException {
         String id = null;
-        EntityModelVehicleEntity response = api.getItemResourceVehicleentityGet(id);
-
+                EntityModelVehicleEntity response = api.getItemResourceVehicleentityGet(id);
         // TODO: test validations
     }
     
@@ -96,8 +93,7 @@ public class VehicleEntityEntityControllerApiTest {
     public void patchItemResourceVehicleentityPatchTest() throws ApiException {
         String id = null;
         VehicleEntityRequestBody vehicleEntityRequestBody = null;
-        EntityModelVehicleEntity response = api.patchItemResourceVehicleentityPatch(id, vehicleEntityRequestBody);
-
+                EntityModelVehicleEntity response = api.patchItemResourceVehicleentityPatch(id, vehicleEntityRequestBody);
         // TODO: test validations
     }
     
@@ -112,8 +108,7 @@ public class VehicleEntityEntityControllerApiTest {
     @Test
     public void postCollectionResourceVehicleentityPostTest() throws ApiException {
         VehicleEntityRequestBody vehicleEntityRequestBody = null;
-        EntityModelVehicleEntity response = api.postCollectionResourceVehicleentityPost(vehicleEntityRequestBody);
-
+                EntityModelVehicleEntity response = api.postCollectionResourceVehicleentityPost(vehicleEntityRequestBody);
         // TODO: test validations
     }
     
@@ -129,8 +124,7 @@ public class VehicleEntityEntityControllerApiTest {
     public void putItemResourceVehicleentityPutTest() throws ApiException {
         String id = null;
         VehicleEntityRequestBody vehicleEntityRequestBody = null;
-        EntityModelVehicleEntity response = api.putItemResourceVehicleentityPut(id, vehicleEntityRequestBody);
-
+                EntityModelVehicleEntity response = api.putItemResourceVehicleentityPut(id, vehicleEntityRequestBody);
         // TODO: test validations
     }
     

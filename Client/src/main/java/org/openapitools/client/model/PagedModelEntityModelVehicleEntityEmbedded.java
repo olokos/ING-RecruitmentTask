@@ -36,6 +36,8 @@ public class PagedModelEntityModelVehicleEntityEmbedded {
   @SerializedName(SERIALIZED_NAME_VEHICLE_ENTITIES)
   private List<EntityModelVehicleEntity> vehicleEntities = null;
 
+  public PagedModelEntityModelVehicleEntityEmbedded() { 
+  }
 
   public PagedModelEntityModelVehicleEntityEmbedded vehicleEntities(List<EntityModelVehicleEntity> vehicleEntities) {
     
@@ -84,7 +86,6 @@ public class PagedModelEntityModelVehicleEntityEmbedded {
   public int hashCode() {
     return Objects.hash(vehicleEntities);
   }
-
 
   @Override
   public String toString() {

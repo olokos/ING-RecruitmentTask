@@ -37,6 +37,8 @@ public class AbstractJsonSchemaPropertyObject {
   @SerializedName(SERIALIZED_NAME_READ_ONLY)
   private Boolean readOnly;
 
+  public AbstractJsonSchemaPropertyObject() { 
+  }
 
   public AbstractJsonSchemaPropertyObject title(String title) {
     
@@ -101,7 +103,6 @@ public class AbstractJsonSchemaPropertyObject {
   public int hashCode() {
     return Objects.hash(title, readOnly);
   }
-
 
   @Override
   public String toString() {

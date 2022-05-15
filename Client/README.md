@@ -13,7 +13,7 @@ Made by olokos for purposes of recruitment to ING
 
 Building the API client library requires:
 1. Java 1.7+
-2. Maven/Gradle
+2. Maven (3.8.3+)/Gradle (7.2+)
 
 ## Installation
 
@@ -49,7 +49,14 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "org.openapitools:openapi-java-client:0.0.1-SNAPSHOT"
+  repositories {
+    mavenCentral()     // Needed if the 'openapi-java-client' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'openapi-java-client' jar has been published to the local maven repo.
+  }
+
+  dependencies {
+     implementation "org.openapitools:openapi-java-client:0.0.1-SNAPSHOT"
+  }
 ```
 
 ### Others

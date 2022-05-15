@@ -1,6 +1,6 @@
 /*
  * Spring Boot Rest Server API
- * Made by Aleksander Kos for purposes of recruitment to ING
+ * Made by olokos for purposes of recruitment to ING
  *
  * The version of the OpenAPI document: 0.0.1-SNAPSHOT
  * Contact: olokos@wp.pl

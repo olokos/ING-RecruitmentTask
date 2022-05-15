@@ -42,6 +42,8 @@ public class CollectionModelEntityModelVehicleEntity {
   @SerializedName(SERIALIZED_NAME_LINKS)
   private Map<String, Link> links = null;
 
+  public CollectionModelEntityModelVehicleEntity() { 
+  }
 
   public CollectionModelEntityModelVehicleEntity embedded(PagedModelEntityModelVehicleEntityEmbedded embedded) {
     
@@ -114,7 +116,6 @@ public class CollectionModelEntityModelVehicleEntity {
   public int hashCode() {
     return Objects.hash(embedded, links);
   }
-
 
   @Override
   public String toString() {

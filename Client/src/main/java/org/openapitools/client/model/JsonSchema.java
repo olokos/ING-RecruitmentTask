@@ -63,6 +63,8 @@ public class JsonSchema {
   @SerializedName(SERIALIZED_NAME_$_SCHEMA)
   private String $schema;
 
+  public JsonSchema() { 
+  }
 
   public JsonSchema title(String title) {
     
@@ -271,7 +273,6 @@ public class JsonSchema {
   public int hashCode() {
     return Objects.hash(title, description, properties, requiredProperties, definitions, type, $schema);
   }
-
 
   @Override
   public String toString() {

@@ -47,6 +47,8 @@ public class PagedModelEntityModelVehicleEntity {
   @SerializedName(SERIALIZED_NAME_PAGE)
   private PageMetadata page;
 
+  public PagedModelEntityModelVehicleEntity() { 
+  }
 
   public PagedModelEntityModelVehicleEntity embedded(PagedModelEntityModelVehicleEntityEmbedded embedded) {
     
@@ -143,7 +145,6 @@ public class PagedModelEntityModelVehicleEntity {
   public int hashCode() {
     return Objects.hash(embedded, links, page);
   }
-
 
   @Override
   public String toString() {

@@ -46,6 +46,8 @@ public class Item {
   @SerializedName(SERIALIZED_NAME_REQUIRED_PROPERTIES)
   private List<String> requiredProperties = null;
 
+  public Item() { 
+  }
 
   public Item type(String type) {
     
@@ -150,7 +152,6 @@ public class Item {
   public int hashCode() {
     return Objects.hash(type, properties, requiredProperties);
   }
-
 
   @Override
   public String toString() {

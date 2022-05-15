@@ -2,6 +2,7 @@
 
 # AbstractJsonSchemaPropertyObject
 
+
 ## Properties
 
 Name | Type | Description | Notes

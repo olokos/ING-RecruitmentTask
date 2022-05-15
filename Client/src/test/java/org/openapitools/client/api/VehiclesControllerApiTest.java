@@ -1,6 +1,6 @@
 /*
  * Spring Boot Rest Server API
- * Made by Aleksander Kos for purposes of recruitment to ING
+ * Made by olokos for purposes of recruitment to ING
  *
  * The version of the OpenAPI document: 0.0.1-SNAPSHOT
  * Contact: olokos@wp.pl
@@ -42,8 +42,7 @@ public class VehiclesControllerApiTest {
      */
     @Test
     public void getVehiclesTest() throws ApiException {
-        List<VehicleEntity> response = api.getVehicles();
-
+                List<VehicleEntity> response = api.getVehicles();
         // TODO: test validations
     }
     

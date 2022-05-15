@@ -2,6 +2,7 @@
 
 # PagedModelEntityModelVehicleEntityEmbedded
 
+
 ## Properties
 
 Name | Type | Description | Notes
