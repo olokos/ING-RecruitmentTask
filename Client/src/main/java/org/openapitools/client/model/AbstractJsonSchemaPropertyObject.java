@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * AbstractJsonSchemaPropertyObject
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-05-15T00:16:11.947395100+02:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-05-15T03:12:23.059152400+02:00[Europe/Belgrade]")
 public class AbstractJsonSchemaPropertyObject {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)

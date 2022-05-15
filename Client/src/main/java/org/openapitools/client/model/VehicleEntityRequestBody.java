@@ -28,7 +28,7 @@ import java.math.BigDecimal;
 /**
  * VehicleEntityRequestBody
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-05-15T00:16:11.947395100+02:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-05-15T03:12:23.059152400+02:00[Europe/Belgrade]")
 public class VehicleEntityRequestBody {
   public static final String SERIALIZED_NAME_VEHICLE_ID = "vehicleId";
   @SerializedName(SERIALIZED_NAME_VEHICLE_ID)

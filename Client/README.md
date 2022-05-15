@@ -2,7 +2,7 @@
 
 Spring Boot Rest Server API
 - API version: 0.0.1-SNAPSHOT
-  - Build date: 2022-05-15T00:16:11.947395100+02:00[Europe/Belgrade]
+  - Build date: 2022-05-15T03:12:23.059152400+02:00[Europe/Belgrade]
 
 Made by olokos for purposes of recruitment to ING
 
