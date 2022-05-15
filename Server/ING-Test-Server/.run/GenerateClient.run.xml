@@ -14,8 +14,8 @@
         </CliArgumentViewModel>
       </list>
     </option>
-    <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-    <option name="jdkPath" value="Default" />
+    <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.4.0/openapi-generator-cli-5.4.0.jar" />
+    <option name="jdkPath" value="17" />
     <option name="language" value="java" />
     <option name="specificationPath" value="C:\Users\olokos\Documents\Projekty\ING-RecruitmentTask\Server\ING-Test-Server\src\main\resources\openapi.yaml" />
     <method v="2" />
