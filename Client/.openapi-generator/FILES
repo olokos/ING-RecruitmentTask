@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -27,7 +26,6 @@ gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 gradlew
 gradlew.bat
-pom.xml
 settings.gradle
 src/main/AndroidManifest.xml
 src/main/java/org/openapitools/client/ApiCallback.java
@@ -63,19 +61,3 @@ src/main/java/org/openapitools/client/model/PagedModelEntityModelVehicleEntityEm
 src/main/java/org/openapitools/client/model/RepresentationModelObject.java
 src/main/java/org/openapitools/client/model/VehicleEntity.java
 src/main/java/org/openapitools/client/model/VehicleEntityRequestBody.java
-src/test/java/org/openapitools/client/api/ProfileControllerApiTest.java
-src/test/java/org/openapitools/client/api/VehicleEntityEntityControllerApiTest.java
-src/test/java/org/openapitools/client/api/VehicleEntitySearchControllerApiTest.java
-src/test/java/org/openapitools/client/api/VehiclesControllerApiTest.java
-src/test/java/org/openapitools/client/model/AbstractJsonSchemaPropertyObjectTest.java
-src/test/java/org/openapitools/client/model/CollectionModelEntityModelVehicleEntityTest.java
-src/test/java/org/openapitools/client/model/EntityModelVehicleEntityTest.java
-src/test/java/org/openapitools/client/model/ItemTest.java
-src/test/java/org/openapitools/client/model/JsonSchemaTest.java
-src/test/java/org/openapitools/client/model/LinkTest.java
-src/test/java/org/openapitools/client/model/PageMetadataTest.java
-src/test/java/org/openapitools/client/model/PagedModelEntityModelVehicleEntityEmbeddedTest.java
-src/test/java/org/openapitools/client/model/PagedModelEntityModelVehicleEntityTest.java
-src/test/java/org/openapitools/client/model/RepresentationModelObjectTest.java
-src/test/java/org/openapitools/client/model/VehicleEntityRequestBodyTest.java
-src/test/java/org/openapitools/client/model/VehicleEntityTest.java

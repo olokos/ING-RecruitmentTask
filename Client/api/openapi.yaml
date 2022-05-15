@@ -321,6 +321,30 @@ components:
             $ref: '#/components/schemas/Link'
           type: object
       type: object
+    VehicleEntity:
+      properties:
+        vehicleId:
+          format: int64
+          type: integer
+        make:
+          type: string
+        model:
+          type: string
+        numberPlate:
+          type: string
+        purchasedFor:
+          type: number
+        vehicleTypeEnum:
+          enum:
+          - CAR
+          - SCOOTER
+          - MOTORCYCLE
+          - VAN
+          - LARGE
+          - OTHER
+          - TRACK
+          type: string
+      type: object
     EntityModelVehicleEntity:
       properties:
         make:
@@ -371,30 +395,6 @@ components:
           type: object
         page:
           $ref: '#/components/schemas/PageMetadata'
-      type: object
-    VehicleEntity:
-      properties:
-        vehicleId:
-          format: int64
-          type: integer
-        make:
-          type: string
-        model:
-          type: string
-        numberPlate:
-          type: string
-        purchasedFor:
-          type: number
-        vehicleTypeEnum:
-          enum:
-          - CAR
-          - SCOOTER
-          - MOTORCYCLE
-          - VAN
-          - LARGE
-          - OTHER
-          - TRACK
-          type: string
       type: object
     CollectionModelEntityModelVehicleEntity:
       properties:
