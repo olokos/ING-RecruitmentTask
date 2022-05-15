@@ -1,6 +1,7 @@
 package pl.olokos.ingtestserver.services;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 import pl.olokos.ingtestserver.model.VehicleEntity;
@@ -11,10 +12,12 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class VehicleService {
     private final VehicleRepository vehicleRepository;
 
     public List<VehicleEntity> findAllVehicles() {
+        log.info("Service has invoked findAllVehicles()");
         Iterable<VehicleEntity> vehicleIterable = vehicleRepository.findAll();
         List<VehicleEntity> vehicleList = new ArrayList<>();
         vehicleIterable.forEach(vehicleList::add);
@@ -22,6 +25,7 @@ public class VehicleService {
     }
 
     public List<VehicleEntity> findByNumberPlate(String numberPlate) {
+        log.info("Service has invoked findAllVehicles()");
         Iterable<VehicleEntity> vehicleIterable = vehicleRepository.findByNumberPlateContaining(numberPlate);
         List<VehicleEntity> vehicleList = new ArrayList<>();
         vehicleIterable.forEach(vehicleList::add);
