@@ -10,7 +10,7 @@ http://localhost:8080/vehicles
 To generate fresh openapi.yaml:
 mvn verify
 
-Then use ING-Client54 build configuration to build a fresh client
+Then use "Generate Client" build configuration to build a fresh client
 
 Then for openapi-java-client
 mvn package
