@@ -7,6 +7,8 @@ http://localhost:8080/h2-console
 Get all vehicles api call:
 http://localhost:8080/vehicles
 
+
+_How to generate a fresh client application?_
 To generate fresh openapi.yaml:
 mvn verify
 
