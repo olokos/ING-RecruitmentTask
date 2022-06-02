@@ -36,6 +36,7 @@ public class VehicleService {
                 throw new NotFoundException("No vehicle with the numberPlate " + numberPlate + " was found");
             } catch (NotFoundException e) {
                 e.printStackTrace();
+                log.error(e.getMessage());
                 //eventually make it so that info appears in GUI
             }
         }

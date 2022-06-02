@@ -32,10 +32,6 @@ class IngTestServerApplicationTests {
     }
 
     @Test
-    void contextLoads() { // default
-    }
-
-    @Test
     public void testGetVehiclesForInputData()
             throws Exception {
         MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
